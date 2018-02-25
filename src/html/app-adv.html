@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app广告</title>
+	<!-- css、js -->
+	<include src="mdl/cssJs.html"></include>
+
+	
+</head>
+<body class="skin-blue my-skin">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <include src="mdl/header.html"></include>
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+        <include src="mdl/sidebar.html"></include>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="adv-button">
+                <div class="btn-add">添加广告</div>
+            </div>
+			<div class="adv-content">
+				<table class="tab-adv">
+					<tr class="tr-one">
+						<th class="state1">序号</th><th>名称</th><th>缩略图</th>
+						<th>停留时间</th><th>生效时间</th><th>失效时间</th><th></th>
+					</tr>
+					<tr class="active ">
+						<td class="state1">1</td><td>麦当劳</td><td class="btn-img"><img src="../img/mf.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr class='bg-info'>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr >
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+				</table>
+				<div class="add-info dn">
+					<div class="upload clearfix2">
+						<div class="item selItem1 clearfix2">
+							<i class="cir"></i>
+							<span class='up-tit'>上传文件:</span>
+							<input class='file' type="file" name="file" />
+							
+						</div>
+						<div class="item selItem2 clearfix2">
+							<i class="cir"></i>
+							<span class="up-tit2">url:</span>
+							<input class='url' type="url" value="http://www.k12china.com"/>
+						</div>
+						<!--<img src="" alt="" class='chooseImg' />-->
+					</div>
+					<img src="" alt="" class='chooseImg' />
+					
+					<div class="adv-url">
+						<span class='xh'>*</span>广告链接地址:<input class='tb-url' type='url' value='http://www.k12china.com'  />		
+					</div>
+					<div class="stay-time">
+						<label class='tx-time-tit'>停留时间：</label>
+						<input class='my-time myTime' type="text" value='3秒' />
+						<ul class='ul Ul dn'>
+							<li>3秒</li>
+							<li>5秒</li>
+							<li>8秒</li>
+							<li>10秒</li>
+						</ul>
+					</div>
+					<div class="check">
+						<input class='checkbox' type="checkbox" />设为默认
+					</div>
+					<div class="calendar">
+						<div class="begin-time">
+							<i class='xh'>*</i>
+							<span class='start'>生效日期：</span>
+							<input class='save-time' type="text" />
+						</div>
+						<div class="end-time">
+							<i class='xh'>*</i>
+							<span class='start'>失效日期：</span>
+							<input class='save-time' type="text" />
+						</div>
+						
+					</div>
+					
+					
+					
+					<div class="adv-censure">
+						<div class="adv-btn">返回</div>
+						<div class="adv-btn">确定</div>
+						
+					</div>
+				</div>
+			</div>
+            
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <include src="mdl/footer.html"></include>
+        <!--  end  footer -->
+    </div>
+    <!--  end  wrapper -->
+</body>
+</html>

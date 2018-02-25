@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app广告</title>
+	<!-- css、js -->
+	    <!-- necessary css -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	    <link rel="stylesheet" href="../css/common.css">
+	    <link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">
+	    <link rel="stylesheet" href="../css/page-math.css">
+	    <link rel="stylesheet" href="../css/app-adv2.css">
+		
+	    <!-- JavaScript -->
+	    <script src="../js/lib/jquery.min.js"></script>
+	    <script src="../js/lib/bootstrap.min.js"></script>
+	    <script src="../js/lib/jquery.ztree.all-3.5.min.js"></script>
+	    <script src="../js/main.js"></script>
+	    <script src="../js/zTreeDemo.js"></script>
+	    <script src="../js/page-math.js"></script>
+	    <script src="../js/app-adv2.js"></script>
+
+	
+</head>
+<body class="skin-blue my-skin">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <!-- <span class="navbar-brand"></span> -->
+                    <h4>精准教育管理后台</h4>
+                    
+                </div>
+                
+                <ul class="nav navbar-nav pull-right user-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle userbutton" data-toggle="dropdown">
+                            <!-- <img src="../img/stc-user.png" alt=""> -->
+                            Dragon 
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu usermenu">
+                            <!-- <li class="user-head">
+                                <div class="media clearfix">
+                                    <span class="photo pull-left"><img src="img/teacher2.png" class="img-circle" alt=""></span>
+                                    
+                                    <div class="media-body">                                
+                                        <h4 class="media-heading">周小填</h4>
+                                        <h6>广东省广州市番禺区远大学校 <span class="label label-danger">数学老师</span></h6>
+                                        <span class="label label-info">一年级5班</span>
+                                        <span class="label label-info">三年级2班</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i> 个人信息
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-log-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+                </header>
+
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-opt">
+                        <div class="menu-setting">
+                            <span class="btn-openall"><i class="glyphicon glyphicon-unchecked"></i> 展开所有菜单</span>
+                        </div>
+                        <a href="#" class="toggle-sidebar"><i class="glyphicon glyphicon-menu-left"></i></a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="submenuparent submenu-open">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">精准教育</span>
+                                <i class="glyphicon icon-menu pull-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class=""><a href="yd-exchange.html">营运中心</a></li>
+                            </ul>
+                        </li> 
+                        <li class="submenuparent submenu-open">
+                            <a href="ct-img.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">错题拍拍相片管理</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                         <li class="submenuparent submenu-open">
+                            <a href="app-adv.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">app广告</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                    </ul>
+                </div>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="adv-button">
+                <div class="btn-add">添加广告</div>
+            </div>
+			<div class="adv-content">
+				<table class="tab-adv">
+					<tr class="tr-one">
+						<th class="state1">序号</th><th>名称</th><th>缩略图</th>
+						<th>停留时间</th><th>生效时间</th><th>失效时间</th><th></th>
+					</tr>
+					<tr class="active ">
+						<td class="state1">1</td><td>麦当劳</td><td class="btn-img"><img src="../img/mf.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr class='bg-info'>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr >
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+				</table>
+				<div class="add-info dn">
+					<div class="upload clearfix2">
+						<div class="item selItem1 clearfix2">
+							<i class="cir"></i>
+							<span class='up-tit'>上传文件:</span>
+							<input class='file' type="file" name="file" />
+							
+						</div>
+						<div class="item selItem2 clearfix2">
+							<i class="cir"></i>
+							<span class="up-tit2">url:</span>
+							<input class='url' type="url" value="http://www.k12china.com"/>
+						</div>
+						<!--<img src="" alt="" class='chooseImg' />-->
+					</div>
+					<img src="" alt="" class='chooseImg' />
+					
+					<div class="adv-url">
+						<span class='xh'>*</span>广告链接地址:<input class='tb-url' type='url' value='http://www.k12china.com'  />		
+					</div>
+					<div class="stay-time">
+						<label class='tx-time-tit'>停留时间：</label>
+						<input class='my-time myTime' type="text" value='3秒' />
+						<ul class='ul Ul dn'>
+							<li>3秒</li>
+							<li>5秒</li>
+							<li>8秒</li>
+							<li>10秒</li>
+						</ul>
+					</div>
+					<div class="check">
+						<input class='checkbox' type="checkbox" />设为默认
+					</div>
+					<div class="calendar">
+						<div class="begin-time">
+							<i class='xh'>*</i>
+							<span class='start'>生效日期：</span>
+							<input class='save-time' type="text" />
+						</div>
+						<div class="end-time">
+							<i class='xh'>*</i>
+							<span class='start'>失效日期：</span>
+							<input class='save-time' type="text" />
+						</div>
+						
+					</div>
+					
+					
+					
+					<div class="adv-censure">
+						<div class="adv-btn">返回</div>
+						<div class="adv-btn">确定</div>
+						
+					</div>
+				</div>
+			</div>
+            
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <script src="http://www.k12china.com/common/ydfooter/ydfooter.js"></script>
+            </div>
+        </footer>
+
+        <!--  end  footer -->
+    </div>
+    <!--  end  wrapper -->
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

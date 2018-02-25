@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大小学云数据统计</title>
+	<!-- css、js -->
+	<include src="mdl/cssJs.html"></include>
+</head>
+<body class="skin-blue">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <include src="mdl/header.html"></include>
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+        <include src="mdl/sidebar.html"></include>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="mainer-head">
+                <ul class="breadcrumb">
+                   <li><span class="glyphicon glyphicon-book"></span><span>数据统计</span></li>
+                   <li><span class="slidebarname">大学云老师达标</span></li>
+                </ul>
+            </div>
+
+            <div class="page-content page-math">
+            	<!-- 选项列表 -->
+                <div class="search-bar">
+                    <div class="edu-group">
+                        <div class="edu-text">请选择学校：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择省份 -- </option>
+                                <option value="">安徽省</option>
+                                <option value="">澳门特别行政区</option>
+                                <option value="">北京</option>
+                                <option value="">测试省</option>
+                                <option value="">福建省</option>
+                                <option value="">甘肃省</option>
+                                <option value="">广东省</option>
+                                <option value="">广西壮族自治区</option>
+                                <option value="">贵州省</option>
+                                <option value="">海南省</option>
+                                <option value="">海外</option>
+                                <option value="">河北省</option>
+                                <option value="">河南省</option>
+                                <option value="">黑龙江省</option>
+                                <option value="">湖北省</option>
+                                <option value="">湖南省</option>
+                                <option value="">吉林省</option>
+                                <option value="">江苏省</option>
+                                <option value="">江西省</option>
+                                <option value="">辽宁省</option>
+                                <option value="">内蒙古自治区</option>
+                                <option value="">宁夏回族自治区</option>
+                                <option value="">青海省</option>
+                                <option value="">山东省</option>
+                                <option value="">山西省</option>
+                                <option value="">陕西省</option>
+                                <option value="">上海</option>
+                                <option value="">四川省</option>
+                                <option value="">台湾省</option>
+                                <option value="">天津</option>
+                                <option value="">西藏自治区</option>
+                                <option value="">香港特别行政区</option>
+                                <option value="">新疆维吾尔自治区</option>
+                                <option value="">云南省</option>
+                                <option value="">浙江省</option>
+                                <option value="">重庆省</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择城市 -- </option>
+                                <option value="">潮州市</option>
+                                <option value="">东莞市</option>
+                                <option value="">佛山市</option>
+                                <option value="">广州市</option>
+                                <option value="">河源市</option>
+                                <option value="">惠州市</option>
+                                <option value="">江门市</option>
+                                <option value="">揭阳市</option>
+                                <option value="">茂名市</option>
+                                <option value="">梅州市</option>
+                                <option value="">清远市</option>
+                                <option value="">汕头市</option>
+                                <option value="">汕尾市</option>
+                                <option value="">韶关市</option>
+                                <option value="">深圳市</option>
+                                <option value="">阳江市</option>
+                                <option value="">云浮市</option>
+                                <option value="">湛江市</option>
+                                <option value="">肇庆市</option>
+                                <option value="">中山市</option>
+                                <option value="">珠海市</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择区域 -- </option>
+                                <option value="">白云区</option>
+                                <option value="">从化区</option>
+                                <option value="">番禺区</option>
+                                <option value="">芳村区</option>
+                                <option value="">海珠区</option>
+                                <option value="">花都区</option>
+                                <option value="">黄埔区</option>
+                                <option value="">荔湾区</option>
+                                <option value="">萝岗区</option>
+                                <option value="">南沙区</option>
+                                <option value="">其他区</option>
+                                <option value="">天河区</option>
+                                <option value="">越秀区</option>
+                                <option value="">增城区</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control" placeholder="学校名称" >
+                        </div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control" placeholder="老师名称" >
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">请选择主机：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择学校 -- </option>
+                                <option value="">潮州学校</option>
+                                <option value="">东莞学校</option>
+                                <option value="">佛山学校</option>
+                                <option value="">广州学校</option>
+                                <option value="">河源学校</option>
+                                <option value="">惠州学校</option>
+                                <option value="">江门学校</option>
+                                <option value="">揭阳学校</option>
+                                <option value="">茂名学校</option>
+                                <option value="">梅州学校</option>
+                                <option value="">清远学校</option>
+                                <option value="">汕头学校</option>
+                                <option value="">汕尾学校</option>
+                                <option value="">韶关学校</option>
+                                <option value="">深圳学校</option>
+                                <option value="">阳江学校</option>
+                                <option value="">云浮学校</option>
+                                <option value="">湛江学校</option>
+                                <option value="">肇庆学校</option>
+                                <option value="">中山学校</option>
+                                <option value="">珠海学校</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择主机 -- </option>
+                                <option value="">潮州学校</option>
+                                <option value="">东莞学校</option>
+                                <option value="">佛山学校</option>
+                                <option value="">广州学校</option>
+                                <option value="">河源学校</option>
+                                <option value="">惠州学校</option>
+                                <option value="">江门学校</option>
+                                <option value="">揭阳学校</option>
+                                <option value="">茂名学校</option>
+                                <option value="">梅州学校</option>
+                                <option value="">清远学校</option>
+                                <option value="">汕头学校</option>
+                                <option value="">汕尾学校</option>
+                                <option value="">韶关学校</option>
+                                <option value="">深圳学校</option>
+                                <option value="">阳江学校</option>
+                                <option value="">云浮学校</option>
+                                <option value="">湛江学校</option>
+                                <option value="">肇庆学校</option>
+                                <option value="">中山学校</option>
+                                <option value="">珠海学校</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">请选择教材：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择教材 -- </option>
+                                <option value="">一年级</option>
+                                <option value="">二年级</option>
+                                <option value="">三年级</option>
+                                <option value="">四年级</option>
+                                <option value="">五年级</option>
+                                <option value="">六年级</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择科目 -- </option>
+                                <option value="">语文</option>
+                                <option value="">数学</option>
+                                <option value="">英语</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择册数 -- </option>
+                                <option value="">一</option>
+                                <option value="">二</option>
+                                <option value="">三</option>
+                                <option value="">四</option>
+                                <option value="">五</option>
+                                <option value="">六</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">请选择版本：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择版本 -- </option>
+                                <option value="">人教版</option>
+                                <option value="">北师大版</option>
+                            </select>
+                        </div>
+                    </div>                   
+                    <div class="edu-group">
+                        <div class="edu-text">备课时间：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">---</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">上课时间：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">---</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <a href="#" class="btn btn-primary pull-left">
+                            <i class="glyphicon glyphicon-search"></i> 
+                            查找
+                        </a>
+                        <a href="#" class="btn btn-primary pull-left">
+                            实时数据
+                        </a>
+                        <a href="#" class="btn btn-danger pull-left">
+                            导出Excel
+                        </a>
+                    </div>
+                </div>
+                <!-- 内容列表 -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- 内容关联 -->
+                        <div class="block block-primary">
+                            <div class="block-header with-border">
+                                <h3 class="block-title">
+                                    <span class="label label-primary label-title"><i class="glyphicon glyphicon-bookmark"></i> 大学云老师达标</span>
+                                </h3>
+                            </div>
+                            <div class="block-body table-main">
+		                        <table class="table table-striped">
+		                        	<thead>
+		                              <tr>
+		                                 <th>序号</th>
+		                                 <th>省</th>
+		                                 <th>市</th>
+		                                 <th>区</th>
+		                                 <th>学校</th>
+		                                 <th>老师姓名</th>
+		                                 <th>班级</th>
+		                                 <th>小学云帐号</th>
+		                                 <th>手机号码</th>
+		                                 <th>绑定公众号</th>
+		                                 <th>大学云上课次数</th>
+		                                 <th>绩效达标</th>
+		                                 <th><a href="#" class="tip-text" data-placement="top" data-content="
+		                                 【绩效达标】同时完成以下4项，该班级绩效达标，标注1：<br>
+		                                  A、教师注册账号，并有手机号；<br>
+		                                  B、教师账号绑定教师公众号；<br>
+		                                  C、老师布置作业3次或以上；<br>
+		                                  D、有10个或以上学生，完成做题或扫码注册关联手机及姓名。<br>
+		                                  " 
+		                                    data-trigger="hover">业务达标</a>
+		                                 </th>
+		                                 <th>是否已计算绩效达标</th>
+		                              </tr>
+		                            </thead>
+		                            <!-- 无数据 -->
+		                            <tbody class="hide">
+		                              <tr class="text-center">
+		                              	<td colspan="14">
+		                              		暂无数据
+		                              	</td>
+		                              </tr>
+		                            </tbody>                             
+		                            <!-- 有数据 -->
+		                            <tbody class="">
+		                              <tr>
+		                                 <td>1</td>
+		                                 <td>广东省</td>
+		                                 <td>广州市</td>
+		                                 <td>越秀区</td>
+		                                 <td>帝王小学</td>
+		                                 <td>龙泽林</td>
+		                                 <td>三年级1班</td>
+		                                 <td>k123456789</td>
+		                                 <td>12345678911</td>
+		                                 <td>1</td>
+		                                 <td>20</td>
+		                                 <td>1</td>
+		                                 <td>1</td>
+		                                 <td>0</td>
+		                              </tr>
+		                              <tr>
+		                                 <td>1</td>
+		                                 <td>广东省</td>
+		                                 <td>广州市</td>
+		                                 <td>越秀区</td>
+		                                 <td>帝王小学</td>
+		                                 <td>龙泽林</td>
+		                                 <td>三年级1班</td>
+		                                 <td>k123456789</td>
+		                                 <td>12345678911</td>
+		                                 <td>1</td>
+		                                 <td>20</td>
+		                                 <td>1</td>
+		                                 <td>1</td>
+		                                 <td>0</td>
+		                              </tr>
+		                              <tr>
+		                                 <td>1</td>
+		                                 <td>广东省</td>
+		                                 <td>广州市</td>
+		                                 <td>越秀区</td>
+		                                 <td>帝王小学</td>
+		                                 <td>龙泽林</td>
+		                                 <td>三年级1班</td>
+		                                 <td>k123456789</td>
+		                                 <td>12345678911</td>
+		                                 <td>1</td>
+		                                 <td>20</td>
+		                                 <td>1</td>
+		                                 <td>1</td>
+		                                 <td>0</td>
+		                              </tr>
+		                            </tbody>                           
+		                        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-row-12 text-center">
+                        <ul class="pagination page-list">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <include src="mdl/footer.html"></include>
+        <!--  end  footer -->
+    </div>
+    <!--  end  wrapper -->
+</body>
+</html>

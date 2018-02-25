@@ -1,0 +1,206 @@
+body,.mainer{
+	background: #FFFFFF;
+	.edu-group{
+		text-align: center;
+		margin: 25px 0
+	}
+	.button-div{
+		margin: 25px 0 10px 0;
+		// text-align: right
+	}
+}
+.dn{
+	display: none
+}
+// 主页面样式
+.wz-content{
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	.title,.content{
+		display: flex;
+		.one-part{
+			flex: 1
+		}
+		.two-part{
+			flex: 2;
+			button{
+				// margin: 5px
+			}
+		}
+		.three-part{
+			flex: 3
+		}
+		.img-div>img{
+			height: 70px;
+			max-width: 110px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		.check-box{
+			input{
+				zoom: 130%
+			}
+		}
+		.describe{
+
+		}
+		.changeOrder{
+			display: flex;
+			justify-content: center;
+			color: #2e6da4;
+			div{
+				flex: 1
+			}
+			.move{
+				display: flex;
+				flex-direction: column;
+				span{
+					display: block;
+					font-size: 25px;
+				}
+			}
+		}
+		.btn-div{
+			display: flex;
+			flex-direction: column;
+			button{
+				margin: 8px
+			}
+		}
+	}
+	.title{
+		height: 45px;
+		line-height: 45px;
+		color: #FFFFFF;
+		div{
+			margin: 1px;
+			color: #FFFFFF;
+			background: #337ab7;
+		}
+	}
+	.content{
+		min-height: 90px;
+		div{
+			margin: 1px;
+			// background: #eaeff7;
+			background: #d2deef;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+		}
+	}
+}
+.paging{
+	text-align: center
+}
+
+// 新增页面和编辑页面样式
+.operate-page{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	.title{
+		height: 65px;
+		line-height: 65px;
+		color: #FFFFFF;
+		font-size: 2.3rem;
+		margin: 2px;
+		background: #337ab7;
+	}
+	.item{
+		display: flex;
+		font-size: 1.7rem;
+		height: 50px;
+		line-height: 50px;
+		div:nth-child(1){
+			flex:1;
+			margin: 1px;
+		}
+		div:nth-child(2){
+			flex:4;
+			margin: 1px;
+			display: flex;
+			// justify-content: center;
+			align-items:center;
+		}
+	}
+	.bg-grey{
+		background: #d2deef
+	}
+	.bg-light-grey{
+		background: #eaeff7
+	}
+	.item-end{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	.text-detail{
+		height: 120px;
+		textarea{
+			padding: 5px;
+			line-height: 2rem;
+			width: 90%;
+			height: 90%;
+			border-radius: 10px;
+			margin-left: 5%
+		}
+	}
+}
+.upload-containter{
+	display: flex;
+	font-size: 1.7rem;
+	height: 90px;
+	line-height: 90px;
+	.bg-light-grey:nth-child(1){
+		flex:1;
+		margin: 1px;
+	}
+	.bg-light-grey:nth-child(2){
+		flex:4;
+		margin: 1px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	.upload-div{
+		display: flex;
+		.one-part{
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			.img-size{
+				height: 35px;
+				line-height: 35px;
+				width: 75%;
+				border: 1px solid #666
+			}
+		}
+		.two-part{
+			flex: 2;
+			img{
+				height: 80px;
+				max-width: 80px;
+			}
+		}
+		.pic-div{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			.pic-containter{
+				height: 35px;
+				line-height: 35px;
+				width: 75%;
+				border: 1px solid #666;
+				.uploadPic{
+					position: absolute;
+					top: 0;
+					width:75%;
+					opacity: 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+body,.mainer{
+    /*background-color: #fff;*/
+}
+
+.info{
+    padding: 25px;
+    &>ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &>li{
+            margin: 30px 0;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &>i{
+                font-style: normal;
+                & + a{
+                    margin-left: 20px;
+                }
+            }
+            &>.dropdown{
+                margin: 20px;
+                display: inline-block;
+            }
+            &>label{
+                font-weight: normal;
+                cursor: pointer;
+                margin: 0 5px;
+            }
+            &>input[type=text]{
+                margin: 10px 0;
+                width: 500px;
+                padding: 5px 10px;
+            }
+            &>textarea{
+                padding: 10px;
+            }
+        }
+    }
+    &>.saveBox{
+        &>.public{
+            width: 100px;
+        }
+    }
+}
+
+.update{
+   display: none;
+   padding: 25px;
+   &>ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &>li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 30px 0;
+            font-size: 20px;
+            &>#upload{
+                position: absolute;
+                clip: rect(0,0,0,0);
+            }
+            &>label{
+                margin: 0 10px;
+                font-weight: normal;
+                cursor: pointer;
+            }
+            &>input[type=text]{
+                margin: 10px 0;
+                width: 500px;
+                padding: 5px 10px;
+            }
+            &>#vid{
+                width: 250px;
+            }
+            &>textarea{
+                padding: 10px;
+            }
+        }
+    }
+    &>.saveBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &>a{
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+}

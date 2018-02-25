@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大小学云数据统计</title>
+	<!-- css、js -->
+	    <!-- necessary css -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	    <link rel="stylesheet" href="../css/common.css">
+	    <link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">
+	    <link rel="stylesheet" href="../css/page-math.css">
+	    <link rel="stylesheet" href="../css/app-adv2.css">
+		
+	    <!-- JavaScript -->
+	    <script src="../js/lib/jquery.min.js"></script>
+	    <script src="../js/lib/bootstrap.min.js"></script>
+	    <script src="../js/lib/jquery.ztree.all-3.5.min.js"></script>
+	    <script src="../js/main.js"></script>
+	    <script src="../js/zTreeDemo.js"></script>
+	    <script src="../js/page-math.js"></script>
+	    <script src="../js/app-adv2.js"></script>
+</head>
+<body class="skin-blue">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <!-- <span class="navbar-brand"></span> -->
+                    <h4>精准教育管理后台</h4>
+                    
+                </div>
+                
+                <ul class="nav navbar-nav pull-right user-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle userbutton" data-toggle="dropdown">
+                            <!-- <img src="../img/stc-user.png" alt=""> -->
+                            Dragon 
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu usermenu">
+                            <!-- <li class="user-head">
+                                <div class="media clearfix">
+                                    <span class="photo pull-left"><img src="img/teacher2.png" class="img-circle" alt=""></span>
+                                    
+                                    <div class="media-body">                                
+                                        <h4 class="media-heading">周小填</h4>
+                                        <h6>广东省广州市番禺区远大学校 <span class="label label-danger">数学老师</span></h6>
+                                        <span class="label label-info">一年级5班</span>
+                                        <span class="label label-info">三年级2班</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i> 个人信息
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-log-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+                </header>
+
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-opt">
+                        <div class="menu-setting">
+                            <span class="btn-openall"><i class="glyphicon glyphicon-unchecked"></i> 展开所有菜单</span>
+                        </div>
+                        <a href="#" class="toggle-sidebar"><i class="glyphicon glyphicon-menu-left"></i></a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="submenuparent submenu-open">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">精准教育</span>
+                                <i class="glyphicon icon-menu pull-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class=""><a href="yd-exchange.html">营运中心</a></li>
+                            </ul>
+                        </li> 
+                        <li class="submenuparent submenu-open">
+                            <a href="ct-img.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">错题拍拍相片管理</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                         <li class="submenuparent submenu-open">
+                            <a href="app-adv.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">app广告</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                    </ul>
+                </div>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="mainer-head">
+                <ul class="breadcrumb">
+                   <li><span class="glyphicon glyphicon-book"></span><span>数据统计</span></li>
+                   <li><span class="slidebarname">星际冒险数据</span></li>
+                </ul>
+            </div>
+
+            <div class="page-content page-math">
+            	<!-- 选项列表 -->
+                <div class="search-bar">
+                    <div class="edu-group">
+                        <div class="edu-text">请选择学校：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择省份 -- </option>
+                                <option value="">安徽省</option>
+                                <option value="">澳门特别行政区</option>
+                                <option value="">北京</option>
+                                <option value="">测试省</option>
+                                <option value="">福建省</option>
+                                <option value="">甘肃省</option>
+                                <option value="">广东省</option>
+                                <option value="">广西壮族自治区</option>
+                                <option value="">贵州省</option>
+                                <option value="">海南省</option>
+                                <option value="">海外</option>
+                                <option value="">河北省</option>
+                                <option value="">河南省</option>
+                                <option value="">黑龙江省</option>
+                                <option value="">湖北省</option>
+                                <option value="">湖南省</option>
+                                <option value="">吉林省</option>
+                                <option value="">江苏省</option>
+                                <option value="">江西省</option>
+                                <option value="">辽宁省</option>
+                                <option value="">内蒙古自治区</option>
+                                <option value="">宁夏回族自治区</option>
+                                <option value="">青海省</option>
+                                <option value="">山东省</option>
+                                <option value="">山西省</option>
+                                <option value="">陕西省</option>
+                                <option value="">上海</option>
+                                <option value="">四川省</option>
+                                <option value="">台湾省</option>
+                                <option value="">天津</option>
+                                <option value="">西藏自治区</option>
+                                <option value="">香港特别行政区</option>
+                                <option value="">新疆维吾尔自治区</option>
+                                <option value="">云南省</option>
+                                <option value="">浙江省</option>
+                                <option value="">重庆省</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择城市 -- </option>
+                                <option value="">潮州市</option>
+                                <option value="">东莞市</option>
+                                <option value="">佛山市</option>
+                                <option value="">广州市</option>
+                                <option value="">河源市</option>
+                                <option value="">惠州市</option>
+                                <option value="">江门市</option>
+                                <option value="">揭阳市</option>
+                                <option value="">茂名市</option>
+                                <option value="">梅州市</option>
+                                <option value="">清远市</option>
+                                <option value="">汕头市</option>
+                                <option value="">汕尾市</option>
+                                <option value="">韶关市</option>
+                                <option value="">深圳市</option>
+                                <option value="">阳江市</option>
+                                <option value="">云浮市</option>
+                                <option value="">湛江市</option>
+                                <option value="">肇庆市</option>
+                                <option value="">中山市</option>
+                                <option value="">珠海市</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择区域 -- </option>
+                                <option value="">白云区</option>
+                                <option value="">从化区</option>
+                                <option value="">番禺区</option>
+                                <option value="">芳村区</option>
+                                <option value="">海珠区</option>
+                                <option value="">花都区</option>
+                                <option value="">黄埔区</option>
+                                <option value="">荔湾区</option>
+                                <option value="">萝岗区</option>
+                                <option value="">南沙区</option>
+                                <option value="">其他区</option>
+                                <option value="">天河区</option>
+                                <option value="">越秀区</option>
+                                <option value="">增城区</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control" placeholder="学校名称" >
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">年级：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择年级 -- </option>
+                                <option value="">一年级</option>
+                                <option value="">二年级</option>
+                                <option value="">三年级</option>
+                                <option value="">四年级</option>
+                                <option value="">五年级</option>
+                                <option value="">六年级</option>
+                            </select>
+                        </div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择班级 -- </option>
+                                <option value="">一班</option>
+                                <option value="">二班</option>
+                                <option value="">三班</option>
+                                <option value="">四班</option>
+                                <option value="">五班</option>
+                                <option value="">六班</option>
+                                <option value="">七班</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">姓名：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">帐号：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">手机号码：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">订阅套餐：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择 -- </option>
+                                <option value="">包月</option>
+                                <option value="">单月</option>
+                                <option value="">半年</option>
+                                <option value="">未订阅</option>
+                            </select>
+                        </div>
+                        <div class="edu-text">绑定微信与否：</div>
+                        <div class="edu-select">
+                            <select class="form-control">
+                                <option value="">-- 请选择 -- </option>
+                                <option value="">有微信</option>
+                                <option value="">无微信</option>
+                            </select>
+                        </div>
+                    </div>                   
+                    <div class="edu-group">
+                        <a href="#" class="btn btn-primary pull-left">
+                            <i class="glyphicon glyphicon-search"></i> 
+                            搜索
+                        </a>
+                        <a href="#" class="btn btn-primary pull-left">
+                            导出
+                        </a>
+                        <a href="#" class="btn btn-warning pull-left"  data-toggle="modal" data-target="#myModal">
+                            发送信息
+                        </a>
+                    </div>
+                </div>
+                <!-- 内容列表 -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- 内容关联 -->
+                        <div class="block block-primary">
+                            <div class="block-header with-border">
+                                <h3 class="block-title">
+                                    <span class="label label-primary label-title"><i class="glyphicon glyphicon-bookmark"></i> 星际冒险数据</span>
+                                </h3>
+                            </div>
+                            <div class="block-body table-main">
+		                        <table class="table table-striped slidelist">
+		                            <thead>
+		                              <tr>
+		                                 <th>
+		                                    <div class="checkbox">
+		                                        <label><input type="checkbox"><b>全选</b></label>
+		                                    </div>
+		                                 </th>
+		                                 <th>序号</th>
+		                                 <th>姓名</th>
+		                                 <th>学校</th>
+		                                 <th>班别</th>
+		                                 <th>账号</th>
+		                                 <th>手机号码</th>
+		                                 <th>微信</th>
+		                                 <th>游戏奖励</th>
+		                                 <th>当前错题数</th>
+		                                 <th>当前订阅</th>
+		                                 <th>发送记录</th>
+		                                 <th>订阅时间</th>
+		                              </tr>
+		                            </thead>
+		                            <!-- 无数据 -->
+		                            <tbody class="hide">
+		                              <tr class="text-center">
+		                                <td colspan="11">
+		                                    暂无数据
+		                                </td>
+		                              </tr>
+		                            </tbody>                             
+		                            <!-- 有数据 -->
+		                            <tbody class="">
+		                                <tr>
+		                                   <td>
+		                                      <div class="checkbox">
+		                                          <label><input type="checkbox">2</label>
+		                                      </div>
+		                                   </td>
+		                                   <td>2</td>
+		                                   <td>谢柱华</td>
+		                                   <td>远大教育</td>
+		                                   <td>301</td>
+		                                   <td>k8602125</td>
+		                                   <td>130****8498</td>
+		                                   <td>
+		                                        <ul class="list-unstyled">
+		                                            <li>
+		                                            </li>
+		                                        </ul>
+		                                   </td>
+		                                   <td>145</td>
+		                                   <td>10</td>
+		                                   <td>单月</td>
+		                                   <td>
+		                                   <ul class="list-unstyled">
+		                                       <li>
+		                                       </li>
+		                                   </ul>                                  
+		                                   </td>
+		                                   <td>2016-06-29 18:24</td>
+		                                </tr>
+		                                <tr>
+		                                   <td>
+		                                      <div class="checkbox">
+		                                          <label><input type="checkbox">2</label>
+		                                      </div>
+		                                   </td>
+		                                   <td>2</td>
+		                                   <td>谢柱华</td>
+		                                   <td>远大教育</td>
+		                                   <td>301</td>
+		                                   <td>k8602125</td>
+		                                   <td>130****8498</td>
+		                                   <td>
+		                                        <ul class="list-unstyled">
+		                                            <li>
+		                                               <span class="">柱华</span>
+		                                               <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                            </li>
+		                                            <li>
+		                                               <span class="">达能</span>
+		                                            </li>   
+		                                        </ul>
+		                                   </td>
+		                                   <td>145</td>
+		                                   <td>10</td>
+		                                   <td>单月</td>
+		                                   <td>
+		                                   <ul class="list-unstyled">
+		                                       <li>
+		                                          <span class="text-danger">30元（2016-01-22）</span>
+		                                          <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="">50元（2016-01-22）</span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="text-danger">100流量（2016-01-22）</span>
+		                                       </li>
+		                                   </ul>                                  
+		                                   </td>
+		                                   <td>2016-06-29 18:24</td>
+		                                </tr>
+		                                <tr>
+		                                   <td>
+		                                      <div class="checkbox">
+		                                          <label><input type="checkbox">2</label>
+		                                      </div>
+		                                   </td>
+		                                   <td>2</td>
+		                                   <td>谢柱华</td>
+		                                   <td>远大教育</td>
+		                                   <td>301</td>
+		                                   <td>k8602125</td>
+		                                   <td>130****8498</td>
+		                                   <td>
+		                                        <ul class="list-unstyled">
+		                                            <li>
+		                                               <span class="">柱华</span>
+		                                               <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                            </li>
+		                                            <li>
+		                                               <span class="">达能</span>
+		                                            </li>   
+		                                        </ul>
+		                                   </td>
+		                                   <td>145</td>
+		                                   <td>10</td>
+		                                   <td>单月</td>
+		                                   <td>
+		                                   <ul class="list-unstyled">
+		                                       <li>
+		                                          <span class="text-danger">30元（2016-01-22）</span>
+		                                          <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="">50元（2016-01-22）</span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="text-danger">100流量（2016-01-22）</span>
+		                                       </li>
+		                                   </ul>                                  
+		                                   </td>
+		                                   <td>2016-06-29 18:24</td>
+		                                </tr>
+		                                <tr>
+		                                   <td>
+		                                      <div class="checkbox">
+		                                          <label><input type="checkbox">2</label>
+		                                      </div>
+		                                   </td>
+		                                   <td>2</td>
+		                                   <td>谢柱华</td>
+		                                   <td>远大教育</td>
+		                                   <td>301</td>
+		                                   <td>k8602125</td>
+		                                   <td>130****8498</td>
+		                                   <td>
+		                                        <ul class="list-unstyled">
+		                                            <li>
+		                                               <span class="">柱华</span>
+		                                               <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                            </li>
+		                                            <li>
+		                                               <span class="">达能</span>
+		                                            </li>   
+		                                        </ul>
+		                                   </td>
+		                                   <td>145</td>
+		                                   <td>10</td>
+		                                   <td>单月</td>
+		                                   <td>
+		                                   <ul class="list-unstyled">
+		                                       <li>
+		                                          <span class="text-danger">30元（2016-01-22）</span>
+		                                          <span class="more"><i class="glyphicon glyphicon-menu-down"></i></span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="">50元（2016-01-22）</span>
+		                                       </li>
+		                                       <li>
+		                                          <span class="text-danger">100流量（2016-01-22）</span>
+		                                       </li>
+		                                   </ul>                                  
+		                                   </td>
+		                                   <td>2016-06-29 18:24</td>
+		                                </tr>
+		                            </tbody>                          
+		                        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-row-12 text-center">
+                        <ul class="pagination page-list">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <script src="http://www.k12china.com/common/ydfooter/ydfooter.js"></script>
+            </div>
+        </footer>
+
+        <!--  end  footer -->
+    </div>
+    <!--  end  wrapper -->
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+       aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-body">
+                <h4>已成功发出1条微信提醒</h4>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+             </div>
+          </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+    
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

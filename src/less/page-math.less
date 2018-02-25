@@ -1,0 +1,227 @@
+body{
+	min-width: 1400px;
+}
+/*logo*/
+.navbar-brand{
+	height: 50px;
+	background: url(../img/logo.png) left center no-repeat;
+	background-size: contain;
+}
+/*右侧路径*/
+.breadcrumb span{
+	margin-right: 4px;
+}
+/*选项列表*/
+.search-bar{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+/*选项组*/
+.edu-group{
+	width: auto;
+	margin-bottom: 12px;
+	overflow: hidden;
+	/*选项文字*/
+	.edu-text{
+		float: left;
+		height: 34px;
+		font-size: 14px;
+		line-height: 34px;
+	}
+	/*选项*/
+	.edu-select{
+		float: left;
+		margin: 0 8px;
+	}
+	/*按钮*/
+	.btn{
+		margin-right: 10px;
+	}
+}
+/*内容列表*/
+.table-main{
+	th{
+		text-align: left;
+	}
+	td{
+		text-align: left;
+	}
+}
+/*滑动下拉列表*/
+.slidelist{
+	tbody>tr>td{
+		padding-bottom: 0;
+	}
+	td>ul{
+		overflow: hidden;
+	}
+	th>.checkbox, td>.checkbox{
+		margin: 0;
+	}
+	.list-unstyled:hover{
+		cursor: pointer;
+	}
+	.list-unstyled li{
+		max-width: 200px;
+		min-height: 20px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+/*模态框*/
+.modal{
+	margin-top: 12%;
+}
+/* 20161019 */
+#exchange{
+	.scope-input{
+		input{
+			width:46px; display:inline-block;
+		}
+	}
+	.time{
+		position: relative;
+	}
+	.time::after{
+		content:attr(data-text);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: #fff;
+		opacity: 0;
+	}
+	.time:hover::after{
+		opacity: 1;
+	}
+	.checkbox{
+		margin: 0;
+	}
+}
+
+/**
+ * chat 聊天记录页面 20161024
+ */
+#chat{
+	background-color: #f2f2f2;
+	.page-list{
+		margin-top: 80px;
+	}
+}
+.center-time{
+	text-align: center;
+	padding-bottom: 16px;
+	padding-top: 10px;
+}
+.page-chat{
+	position: relative;
+	top: 10px;
+	width: 100%;
+	height: 100%;
+	.chat-width{
+		margin: 0 auto ;
+		width: 800px;
+	}
+	.chat-block{
+		border-top: 1px solid #d5d5d5;
+		border-bottom: 1px solid #d5d5d5;
+		padding: 15px 0;
+		min-height: 90px;
+		background-color: #fff;
+		overflow: hidden;
+	}
+	.left{
+		margin-left: -98%;
+		float: left;
+		display: block;
+		width: 60px;
+		height: 60px;
+	}
+	@right: 90px;
+	.right{
+		text-align: right;
+		margin-left: -@right;
+		display: block;
+		float: left;
+		width: 60px;
+		height: 60px;
+	}
+	.main{
+		float: left;
+		width: 100%;
+		height: 100%;
+		.main-wrap{
+			margin: 0 @right 0 90px;
+			padding-right: 10px;
+			&.tr{
+				text-align: right;
+			}
+		}
+		.name{
+			font-size: 16px;
+			color: #333;
+			font-weight: 500;
+			margin: 2px;
+		}
+		.con{
+			margin-top: 10px;
+			margin-left: 4px;
+			color: #666;
+			vertical-align: sub;
+			line-height: 1.4;
+			padding-right: 2px;
+		}
+	}
+	.timeline{
+		text-align: center;
+	}
+
+}
+.br_con{
+	label{
+		width: 110px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+.ex_tr{
+	p{
+		margin: 0;
+		// margin-bottom: 5px;
+	}
+}
+.ctxx-img{
+	.img-sub{
+		text-align: center;
+		padding-bottom: 40px;
+	}
+	.img-list{
+		box-sizing: border-box;
+		img{
+			display: inline-block;
+			vertical-align: middle;
+			height: 200px;
+		}
+		.manager{
+			text-align: left;
+			margin-top: 8px;
+			height: 30px;
+			line-height: 30px;
+			button{
+				vertical-align: middle;
+				display: inline-block;
+				margin-right: 20px;
+			}
+			input{
+				vertical-align: middle;
+				margin-left: 20px;
+			}
+			.img-check{
+				
+			}
+		}
+	}
+}

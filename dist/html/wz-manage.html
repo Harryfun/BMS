@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app广告</title>
+	<!-- necessary css -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="../css/page-math.css">
+    <link rel="stylesheet" href="../css/wz-manage.css">
+    <link rel="stylesheet" href="../css/pager.css">
+	
+    <!-- JavaScript -->
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="../js/lib/jquery.ztree.all-3.5.min.js"></script>
+    <script src="../js/lib/pager.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/zTreeDemo.js"></script>
+    <script src="../js/page-math.js"></script>
+    <script src="../js/wz-manage.js"></script>
+
+	
+</head>
+<body class="skin-blue my-skin">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <!-- <span class="navbar-brand"></span> -->
+                    <h4>精准教育管理后台</h4>
+                    
+                </div>
+                
+                <ul class="nav navbar-nav pull-right user-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle userbutton" data-toggle="dropdown">
+                            <!-- <img src="../img/stc-user.png" alt=""> -->
+                            Dragon 
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu usermenu">
+                            <!-- <li class="user-head">
+                                <div class="media clearfix">
+                                    <span class="photo pull-left"><img src="img/teacher2.png" class="img-circle" alt=""></span>
+                                    
+                                    <div class="media-body">                                
+                                        <h4 class="media-heading">周小填</h4>
+                                        <h6>广东省广州市番禺区远大学校 <span class="label label-danger">数学老师</span></h6>
+                                        <span class="label label-info">一年级5班</span>
+                                        <span class="label label-info">三年级2班</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i> 个人信息
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-log-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+                </header>
+
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-opt">
+                        <div class="menu-setting">
+                            <span class="btn-openall"><i class="glyphicon glyphicon-unchecked"></i> 展开所有菜单</span>
+                        </div>
+                        <a href="#" class="toggle-sidebar"><i class="glyphicon glyphicon-menu-left"></i></a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="submenuparent submenu-open">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">精准教育</span>
+                                <i class="glyphicon icon-menu pull-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class=""><a href="yd-exchange.html">营运中心</a></li>
+                            </ul>
+                        </li> 
+                        <li class="submenuparent submenu-open">
+                            <a href="ct-img.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">错题拍拍相片管理</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                         <li class="submenuparent submenu-open">
+                            <a href="app-adv.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">app广告</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                    </ul>
+                </div>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+        	<!-- 主页面 -->
+        	<div class="page-content" id="index-page">
+					<!-- 选择 -->
+					<div class="edu-group">
+		                <div class="edu-text">公众号：</div>
+		                <div class="edu-select">
+		                    <select class="form-control">
+		                        <option value="">家长通</option>
+		            			<option value="">教辅联盟号</option>
+		                    </select>
+		                </div>
+		                <div class="edu-text">栏目：</div>
+		                <div class="edu-select">
+		                    <select class="form-control">
+		                       <option value="">必读好文</option>
+		            			<option value="">合作伙伴</option>
+		            			<option value="">精彩回顾</option>
+		                    </select>
+		                </div>
+		                <div class="edu-text">热门：</div>
+		                <div class="edu-select">
+		                	<select class="form-control">
+			                    <option value="">是</option>
+			            		<option value="">否</option>
+		            		</select>
+		                </div>
+		                <div class="edu-text">隐藏：</div>
+		                <div class="edu-select">
+		                    <select class="form-control">
+			                    <option value="">是</option>
+			            		<option value="">否</option>
+		            		</select>
+		                </div>
+		            </div>
+					<!-- 按钮 -->
+		            <div class="button-div">
+						<button class="btn btn-primary" type="button">搜索</button>
+						<button class="btn btn-primary" type="button" id="linkToAdd">新增</button>
+						<button class="btn btn-primary" type="button">预览</button>
+		            </div>
+					<!-- 内容 -->
+		            <div class="wz-content row">
+						<div class="title">
+							<div class="one-part">序号</div>
+							<div class="one-part">平台</div>
+							<div class="one-part">栏目</div>
+							<div class="one-part">标题</div>
+							<div class="one-part">顺序</div>
+							<div class="three-part">描述</div>
+							<div class="two-part">链接地址</div>
+							<div class="three-part">图片地址</div>
+							<div class="one-part">是否热门</div>
+							<div class="one-part">是否隐藏</div>
+							<div class="one-part">类型</div>
+							<div class="two-part">操作</div>
+						</div>
+						<div class="content">
+							<div class="one-part order">1</div>
+							<div class="one-part platform" value="1">家长通</div>
+							<div class="one-part column" value="1">必读好文</div>
+							<div class="one-part head">标题1</div>
+							<div class="one-part changeOrder">
+								<div class="nowOrder">2</div>
+								<div class="move">
+									<span class="glyphicon glyphicon-triangle-top"></span>
+									<span class="glyphicon glyphicon-triangle-bottom"></span>
+								</div>
+							</div>
+							<div class="three-part describe">必读好文必读好文必读好好文必读好文必好文必读好文必读好文必读好文必读好文必读好文必读好文必读好文必读读好文必读好文必读好文必读好文必读好文必读好必读好文必读好文必读好必读好文必读好文必读好</div>
+							<div class="two-part urlAddress">
+								<a class="btn btn-primary" target="_blank" href="http://www.360.com">查看</a>
+							</div>
+							<div class="three-part img-div">
+								<img class="showPic pic-one" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg" alt="" url="/201711/815a61ef9c685af6ea5a213fc01b6104.png" minurl="/201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg">
+								<img class="showPic pic-two" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg" alt="" url="/201711/815a61ef9c685af6ea5a213fc01b6104.png" minurl="/201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg">
+							</div>
+							<div class="one-part check-box isHot">
+							    <input type="checkbox">
+							</div>
+							<div class="one-part check-box isHide">
+								<input type="checkbox">
+							</div>
+							<div class="one-part type" value="1">福利</div>
+							<div class="two-part btn-div">
+								<button class="btn btn-primary editData" type="button">修改</button>
+								<button class="btn btn-primary" type="button">删除</button>
+							</div>
+						</div>
+						<div class="content">
+							<div class="one-part order">1</div>
+							<div class="one-part platform" value="2">教辅联盟号</div>
+							<div class="one-part column" value="2">合作伙伴</div>
+							<div class="one-part head">标题1</div>
+							<div class="one-part changeOrder">
+								<div class="nowOrder">1</div>
+								<div class="move">
+									<span class="glyphicon glyphicon-triangle-top"></span>
+									<span class="glyphicon glyphicon-triangle-bottom"></span>
+								</div>
+							</div>
+							<div class="three-part describe">必读好文必读好文必读好好文必读好文必好文必读好文必读好文必读好文必读好文必读好文必读好文必读好文必读读好文必读好文必读好文必读好文必读好文必读好必读好文必读好文必读好必读好文必读好文必读好</div>
+							<div class="two-part urlAddress">
+								<a class="btn btn-primary" target="_blank" href="http://www.baidu.com">查看</a>
+							</div>
+							<div class="three-part img-div">
+								<img class="showPic pic-one" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg" alt="" url="/201711/815a61ef9c685af6ea5a213fc01b6104.png" minurl="/201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg">
+								<img class="showPic pic-two" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg" alt="" url="/201711/815a61ef9c685af6ea5a213fc01b6104.png" minurl="/201711/5028fd7b1f7315c66cfa8b3c8c246238.jpg">
+							</div>
+							<div class="one-part check-box isHot">
+							    <input type="checkbox">
+							</div>
+							<div class="one-part check-box isHide">
+								<input type="checkbox">
+							</div>
+							<div class="one-part type" value="2">咨询</div>
+							<div class="two-part btn-div">
+								<button class="btn btn-primary editData" type="button">修改</button>
+								<button class="btn btn-primary" type="button">删除</button>
+							</div>
+						</div>
+		            </div>
+					<!-- 分页 -->
+		            <div class="paging " id="paging1" style="text-align: center;font-size: 1.7rem">
+	                    <ul class="pagination" id="page1"></ul>
+	                    <div class="pageJump">
+	                      <span>跳转到</span>
+	                      <input type="text"/>
+	                      <span>页</span>
+	                      <button type="button" class="button">确定</button>
+	                    </div>
+	                </div>
+	        </div>
+			
+			<!-- 新增页面 -->
+			<div class="page-content dn" id="add-page">
+				<div>
+					<button class="btn btn-primary" type="button" id="linkToIndex">返回</button>
+				</div>
+				<div class="operate-page">
+					<div class="title">新增文章</div>
+					<div class="item">
+						<div class="bg-light-grey">平台</div>
+						<div class="bg-light-grey">
+							<select class="platform form-control" style="width: 20%;margin-left: 5%">
+								<option value="0" style="display: none"> </option>
+		                        <option value="1">家长通</option>
+		            			<option value="2">教辅联盟号</option>
+		                    </select>
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-grey">栏目</div>
+						<div class="bg-grey">
+							<select class="column form-control" style="width: 20%;margin-left: 5%">
+								<option value="0" style="display: none"> </option>
+		                       	<option value="1">必读好文</option>
+		            			<option value="2">合作伙伴</option>
+		            			<option value="3">精彩回顾</option>
+		                    </select>
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-light-grey">标题</div>
+						<div class="bg-light-grey">
+							<input class="head form-control" type="text" style="width: 90%;margin-left: 5%" placeholder="请输入标题">
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-grey">类型</div>
+						<div class="bg-grey">
+							<select class="type form-control" style="width: 20%;margin-left: 5%">
+								<option value="0" style="display: none"> </option>
+		                       	<option value="1">福利</option>
+		            			<option value="2">咨询</option>
+		            			<option value="3">干货</option>
+		                    </select>
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-light-grey">文章顺序</div>
+						<div class="bg-light-grey">
+							<input class="nowOrder form-control" type="text" style="width: 20%;margin-left: 5%"  placeholder="请输入顺序">
+						</div>
+					</div>
+					<div class="item text-detail">
+						<div class="bg-grey">文章描述</div>
+						<div class="bg-grey">
+							<textarea class="describe" name="" id="" placeholder="请输入描述"></textarea>
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-light-grey">链接地址</div>
+						<div class="bg-light-grey">
+							<input class="urlAddress form-control" type="text" style="width: 90%;margin-left: 5%" placeholder="请输入链接地址">
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-grey"> </div>
+						<div class="bg-grey"></div>
+					</div>
+					<div class="upload-containter">
+						<div class="bg-light-grey">上传图片1</div>
+						<div class="bg-light-grey upload-div">
+							<div class="two-part">
+								<span class="img-span">
+									<img class="one-pic" src="" alt="">
+									<!-- <img class="showPic" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/6e16f32357960887f59cfba59374a5d9.jpg"> -->
+								</span>
+							</div>
+							<div class="one-part pic-div">
+								<div class="pic-containter">
+									<div>
+										<span class="glyphicon glyphicon-open"></span>
+										<span>上传图片</span>
+									</div>
+									<input type="file" class="uploadPic">
+								</div>
+							</div>
+							<div class="one-part">
+								<div class="img-size">900*500</div>
+							</div>
+							<div class="one-part">
+								<button class="btn btn-primary preview" type="button">预览</button>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="bg-grey"> </div>
+						<div class="bg-grey"></div>
+					</div>
+					<div class="upload-containter">
+						<div class="bg-light-grey">上传图片2</div>
+						<div class="bg-light-grey upload-div">
+							<div class="two-part">
+								<span class="img-span">
+									<img class="two-pic" src="" alt="">
+									<!-- <img class="showPic" src="http://yondor.oss-cn-shanghai.aliyuncs.com//201711/6e16f32357960887f59cfba59374a5d9.jpg"> -->
+								</span>
+							</div>
+							<div class="one-part pic-div">
+								<div class="pic-containter">
+									<div>
+										<span class="glyphicon glyphicon-open"></span>
+										<span>上传图片</span>
+									</div>
+									<input type="file" class="uploadPic">
+								</div>
+							</div>
+							<div class="one-part">
+								<div class="img-size">200*200</div>
+							</div>
+							<div class="one-part">
+								<button class="btn btn-primary preview" type="button">预览</button>
+							</div>
+						</div>
+					</div>
+					<div class="item bg-grey item-end">
+						<button class="btn btn-primary" type="button" id="saveData">保存</button>
+					</div>
+				</div>
+			</div>
+			<!-- 编辑页面 -->
+			<div id="edit-page">
+
+			</div>
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <!-- <footer class="footer">
+     <div class="copyright">
+         <script src="http://www.k12china.com/common/ydfooter/ydfooter.js"></script>
+     </div>
+ </footer>
+ -->
+        <!--  end  footer -->
+         <!-- 查看大图 -->
+		  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		    <div class="modal-dialog" role="document">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          <h4 class="modal-title" id="myModalLabel">查看大图</h4>
+		        </div>
+		        <div class="modal-body" style="text-align: center;">
+		          <img style="height: 400px;max-width:500px" src="../img/nib/tb.png" alt="">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+    </div>
+    <!--  end  wrapper -->
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

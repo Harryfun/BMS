@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+@skinblue: #3c8dbc;
+.skin-blue{
+    .navbar{
+        background-color: @skinblue;
+    }
+    .navbar-header{
+        background-color: darken(@skinblue, 1%);
+    }
+    .sidebar-menu{
+        a:hover,a:focus{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .active>a{
+            background-color: darken(@skinblue, 15%);
+        }
+
+        .submenu{
+            li>a:hover,
+            li>a:focus,
+            li.active a{
+                // background-color: #333;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .toggle-sidebar(){
+        background-color: @skinblue;
+        &:hover{
+            background-color: darken(@skinblue, 10%)
+        }
+    }
+}

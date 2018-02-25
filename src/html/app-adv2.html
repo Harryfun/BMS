@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app广告</title>
+	<!-- css、js -->
+	<include src="mdl/cssJs.html"></include>
+
+	
+</head>
+<body class="skin-blue my-skin">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <include src="mdl/header2.html"></include>
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+        <include src="mdl/sidebar.html"></include>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="adv-button">
+                <div class="btn-add">添加广告</div>
+            </div>
+			<div class="adv-content">
+				<table class="tab-adv">
+					<tr class="tr-one">
+						<th class="state1">序号</th><th>名称</th><th>缩略图</th>
+						<th>停留时间</th><th>生效时间</th><th>失效时间</th><th></th>
+					</tr>
+					<tr class="active ">
+						<td class="state1">1</td><td>麦当劳</td><td class="btn-img"><img src="../img/mf.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr class='bg-info'>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr >
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+					<tr>
+						<td class="state1">2</td><td>麦当劳</td><td class="btn-img"><img src="../img/bu_bk.png" alt="" /></td>
+						<td>5秒</td><td>2017-4-20</td><td>2017-4-20</td><td><span class='edit'>编辑</span></td>
+					</tr>
+				</table>
+				<div class="add-info dn">
+					<div class="row ">
+						<div class="radio col-xs-3">
+						   <label>
+						      <input type="radio" name="optionsRadios" id="optionsRadios1" 
+						         value="option1" checked>
+						   </label>
+						   上传文件：
+						         <input type="file" name="image" class="projectfile" >
+
+						</div>
+						<dir class="col-xs-3 img-select">
+						   <img class="myImg" src="../../dist/img/bu_bk.png" alt="" />
+							
+						</dir>
+						
+					</div>
+					<div class="row">
+						<div class="radio col-xs-4">
+						   <label>
+						      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+						         value="option2">
+
+						   </label>
+						    URL： <input type="text" class="form-control" placeholder="www.k12china.com">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							广告序号： <input type="text" class="form-control" placeholder="www.k12china.com">
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-xs-5">
+							广告名称： <input type="text" class="form-control" placeholder="www.k12china.com">
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+						失效日期： <input type="text" class="form-control" placeholder="2017-05-01">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+						生效日期： <input type="text" class="form-control" placeholder="2017-05-03">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							链接地址： <input type="text" class="form-control" placeholder="www.k12china.com">
+						</div>
+						
+					</div>
+					
+					
+					<div class="row">
+						<div class="col-xs-4">
+						 	停留时间：
+							<div class="btn-group">
+							  <button type="button" class="btn btn-primary save-time">3秒</button>
+							  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="caret"></span>
+							    <span class="sr-only">Toggle Dropdown</span>
+							  </button>
+							  <ul class="dropdown-menu select-time">
+							    <li><a href="#">3秒</a></li>
+							    <li><a href="#">5秒</a></li>
+							    <li><a href="#">8秒</a></li>
+							    <li><a href="#">10秒</a></li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row go-back">
+						<div class="col-xs-4 go-back-con">
+							<button type="button" class="btn btn-primary">返回</button>
+							<button type="button" class="btn btn-primary">确定</button>
+						</div>
+					</div>
+
+
+					
+					
+				</div>
+			</div>
+            
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <!--<include src="mdl/footer.html"></include>-->
+        <!--  end  footer -->
+    </div>
+    <!--  end  wrapper -->
+</body>
+</html>

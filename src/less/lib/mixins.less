@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+// 渐变
+.gradient(@bgcolor){
+    background: @bgcolor !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @bgcolor), color-stop(1, lighten(@bgcolor, 8%))) !important;
+    background: -ms-linear-gradient(bottom, @bgcolor, lighten(@bgcolor, 8%)) !important;
+    background: -moz-linear-gradient(center bottom, @bgcolor 0, lighten(@bgcolor, 8%) 100%) !important;
+    background: -o-linear-gradient(lighten(@bgcolor, 8%), @bgcolor) !important;
+}
+
+.user-select(){
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

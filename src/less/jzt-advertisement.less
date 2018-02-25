@@ -1,0 +1,183 @@
+body,.mainer{
+    background-color: #fff;
+}
+.all{
+    padding: 25px;
+    .wz-content{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .title,.content{
+            display: flex;
+            .one-part{
+                width: 10%;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            .two-part{
+                width: 20%;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            .three-part{
+                width: 30%;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            .img-div>img{
+                height: 70px;
+                max-width: 110px;
+                cursor: pointer;
+                margin: 5px;
+            }
+        }
+        .title{
+            border-bottom: 1px solid dodgerblue;
+            font-size: 22px;
+            height: 45px;
+            line-height: 45px;
+            div{
+                margin: 1px;
+            }
+        }
+        .content{
+            padding: 20px 0;
+            min-height: 90px;
+            border-bottom: 1px dashed deepskyblue;
+            div{
+                margin: 1px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+            div.editBox{
+                display: flex;
+                flex-direction: column;
+                min-height: 80px;
+                justify-content: center;
+            }
+            div.imgBox{
+                max-width: 200px;
+                &>img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.add{
+    display: none;
+    padding: 25px;
+    &>h1{
+        float: left;
+        font-size: 24px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-left: 34px;
+        position: relative;
+        &:before{
+            margin-top: -10px;
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 0;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #337ab7;
+        }
+    }
+    &>p{
+        color: #666;
+        line-height: 26px;
+        float: left;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    &>ul{
+        clear: both;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &>li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+            margin: 30px 0;
+            &>span{
+                font-size: 20px;
+            }
+            &>.uploadPic{
+                position: absolute;
+                clip: rect(0,0,0,0);
+            }
+            #adName{
+                padding: 0 10px;
+                width: 400px;
+                height: 40px;
+            }
+            #webUrl{
+                padding: 0 10px;
+                width: 600px;
+                height: 40px;
+            }
+        }
+    }
+    .btnBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        &>a{
+            width: 200px;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+/*开关按钮*/
+.search_checkbox{
+    margin: 0;
+    padding: 0;
+    &>input[type=checkbox]{
+        position: absolute;
+        clip: rect(0,0,0,0);
+    }
+    &>label{
+        display: block;
+        margin: 0;
+        cursor: pointer;
+        height: 20px;
+        border-radius: 10px;
+        background-color: gray;
+        width: 40px;
+        text-indent: -99999px;
+        position: relative;
+        &::before {
+            content: '';
+            display:inline-block;
+            background-color: white;
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            border-radius: 7px;
+            transition:0.3s;
+        }
+        &:active:before{
+            width:20px;
+        }
+    }
+    &>input:checked + label {
+        background: #bada55;
+        &:before {
+            left: calc(100% - 8px);
+            transform: translateX(-100%);
+        }
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app广告</title>
+	<!-- necessary css -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="{cssPath}/bootstrap.min.css">
+    <link rel="stylesheet" href="{cssPath}/common.css">
+    <link rel="stylesheet" href="{cssPath}/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="{cssPath}/page-math.css">
+    <link rel="stylesheet" href="{cssPath}/jzt-advertisement.css">
+    <link rel="stylesheet" href="{cssPath}/pager.css">
+	
+    <!-- JavaScript -->
+    <script src="{jsPath}/lib/jquery.min.js"></script>
+    <script src="{jsPath}/lib/bootstrap.min.js"></script>
+    <script src="{jsPath}/lib/jquery.ztree.all-3.5.min.js"></script>
+    <script src="{jsPath}/lib/pager.js"></script>
+    <script src="{jsPath}/main.js"></script>
+    <script src="{jsPath}/zTreeDemo.js"></script>
+    <script src="{jsPath}/page-math.js"></script>
+    <script src="{jsPath}/jzt-advertisement.js"></script>
+
+	
+</head>
+<body class="skin-blue my-skin">
+
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <include src="mdl/header.html"></include>
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+        <include src="mdl/sidebar.html"></include>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+        	<!--所有广告显示模块--头部-->
+        	<div class="container-fluid all">
+        		
+        		<a class="btn btn-primary btn-lg add_advertisement" href="javascript:;" role="button">新增广告</a>
+        		<hr>
+        		
+        		<input type="text" name="searchName" id="searchName" placeholder="输入广告名" />
+        		<select name="searchState" id="searchState" style="height: 26px;">
+        			<option value="">广告状态</option>
+        			<option value="T">开</option>
+        			<option value="F">关</option>
+        		</select>
+        		<a class="btn btn-primary search" href="javascript:;" role="button">搜索</a>
+        		
+        		<div class="wz-content row">
+					<div class="title">
+						<div class="one-part">开关</div>
+						<div class="two-part">名称</div>
+						<div class="two-part">预览图</div>
+						<div class="three-part">网址</div>
+						<div class="two-part">上传时间</div>
+						<div class="one-part">操作</div>
+					</div>
+        			<div class="notFound" style="display: none;">
+        				<h2>暂无数据</h2>
+        			</div>
+					<!--<div class="content">
+						<div class="one-part swBox">
+							<div class='search_checkbox'>
+								<input type='checkbox' id= 'switch1'>
+								<label for='switch1'></label>
+							</div>
+						</div>
+						<div class="two-part nameBox">中小学生辅导</div>
+						<div class="two-part imgBox"><img src="../img/mf.png"/></div>
+						<div class="three-part urlBox">http://touch.m.dangdang.com/topics.php?page_id=139177</div>
+						<div class="two-part dateBox">2017-12-3 11:27:40</div>
+						<div class="one-part editBox">
+							<a class="btn btn-primary edit" href="#" role="button">编辑</a>
+							<a class="btn btn-primary del" href="#" role="button">删除</a>
+						</div>
+					</div>
+					<div class="content">
+						<div class="one-part swBox">
+							<div class='search_checkbox'>
+								<input type='checkbox' id= 'switch2'>
+								<label for='switch2'></label>
+							</div>
+						</div>
+						<div class="two-part nameBox">中小学生辅导</div>
+						<div class="two-part imgBox"><img src="../img/mf.png"/></div>
+						<div class="three-part urlBox">http://touch.m.dangdang.com/topics.php?page_id=139177</div>
+						<div class="two-part dateBox">2017-12-3 11:27:40</div>
+						<div class="one-part editBox">
+							<a class="btn btn-primary edit" href="#" role="button">编辑</a>
+							<a class="btn btn-primary del" href="#" role="button">删除</a>
+						</div>
+					</div>-->
+	            </div>
+	            
+	            <!--<div class="col-row-12 text-center">
+                  <ul class="pagination page-list">
+                      <li><a href="#">首页</a></li>
+                      <li><a href="#">&lt;</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">&gt;</a></li>
+                      <li><a href="#">尾页</a></li>
+
+                      <span class="page-sum">共5页</span>
+                      <input type="text" class="form-control">
+                      <a href="javascript:;" class="btn btn-default btn-sm"> 跳转</a>
+                  </ul>
+                </div>-->
+                <div class="paging " id="paging1" style="text-align: center;font-size: 1.7rem">
+                    <ul class="pagination" id="page1"></ul>
+                    <div class="pageJump">
+                      <span>跳转到</span>
+                      <input type="text"/>
+                      <span>页</span>
+                      <button type="button" class="button">确定</button>
+                    </div>
+                </div>
+        	</div>
+        	<!--所有广告显示模块--尾部-->
+        	
+        	<!--增加广告模块--头部-->
+        	<div class="container-fluid add">
+        		<h1>上传文件</h1>
+        		<p>（上传图片尺寸为：1128*362，大小控制100K内）</p>
+        		<ul>
+        			<li>
+        				<a href="javascript:;" class="btn btn-primary btn-lg uploadBtn">选择文件</a>
+        				<input type="file" class="uploadPic">
+        			</li>
+        			<li>
+        				<span>广告图预览：</span>
+        				<img src="" class="view"/>
+        			</li>
+        			<li>
+        				<span>是否开启：</span>
+        				<div class='search_checkbox'>
+							<input type='checkbox' id= 'add_switch'>
+							<label for='add_switch'></label>
+						</div>
+        			</li>
+        			<li>
+        				<span>广告名称：</span>
+        				<input type="text" name="adName" id="adName" />
+        			</li>
+        			<li>
+        				<span>链接地址：</span>
+        				<input type="text" name="webUrl" id="webUrl" />
+        			</li>
+        		</ul>
+        		<div class="btnBox">
+	        		<a href="javascript:;" class="btn btn-primary btn-lg back">返回</a>
+	        		<a href="javascript:;" class="btn btn-primary btn-lg sure">确定</a>
+        		</div>
+    		</div>
+    		<!--增加广告模块--尾部-->
+        </div>
+        <!--  end  main -->
+
+        <!-- start footer -->
+        <!-- <include src="mdl/footer.html"></include> -->
+        <!--  end  footer -->
+         <!-- 查看大图 -->
+		  <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		    <div class="modal-dialog" role="document">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          <h4 class="modal-title" id="myModalLabel">查看大图</h4>
+		        </div>
+		        <div class="modal-body" style="text-align: center;">
+		          <img style="height: 400px;max-width:500px" src="../img/nib/tb.png" alt="">
+		        </div>
+		      </div>
+		    </div>
+		  </div>-->
+    </div>
+    <input type="hidden" id="openUrl" value="${request_url!}" />
+
+    <!--  end  wrapper -->
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>大小学云营运中心</title>
+  <!-- css、js -->
+      <!-- necessary css -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">
+      <link rel="stylesheet" href="../css/page-math.css">
+      <link rel="stylesheet" href="../css/app-adv2.css">
+  	
+      <!-- JavaScript -->
+      <script src="../js/lib/jquery.min.js"></script>
+      <script src="../js/lib/bootstrap.min.js"></script>
+      <script src="../js/lib/jquery.ztree.all-3.5.min.js"></script>
+      <script src="../js/main.js"></script>
+      <script src="../js/zTreeDemo.js"></script>
+      <script src="../js/page-math.js"></script>
+      <script src="../js/app-adv2.js"></script>
+</head>
+<body class="skin-blue" id="exchange">
+  <!-- start wrapper -->
+  <div class="wrapper">
+    <!-- start header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <!-- <span class="navbar-brand"></span> -->
+                <h4>精准教育管理后台</h4>
+                
+            </div>
+            
+            <ul class="nav navbar-nav pull-right user-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle userbutton" data-toggle="dropdown">
+                        <!-- <img src="../img/stc-user.png" alt=""> -->
+                        Dragon 
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </a>
+                    <ul class="dropdown-menu usermenu">
+                        <!-- <li class="user-head">
+                            <div class="media clearfix">
+                                <span class="photo pull-left"><img src="img/teacher2.png" class="img-circle" alt=""></span>
+                                
+                                <div class="media-body">                                
+                                    <h4 class="media-heading">周小填</h4>
+                                    <h6>广东省广州市番禺区远大学校 <span class="label label-danger">数学老师</span></h6>
+                                    <span class="label label-info">一年级5班</span>
+                                    <span class="label label-info">三年级2班</span>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i> 个人信息
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-log-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+                    <div class="clearfix"></div>
+                </nav>
+            </header>
+
+    <!--  end  header -->
+
+    <!-- start sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-opt">
+                    <div class="menu-setting">
+                        <span class="btn-openall"><i class="glyphicon glyphicon-unchecked"></i> 展开所有菜单</span>
+                    </div>
+                    <a href="#" class="toggle-sidebar"><i class="glyphicon glyphicon-menu-left"></i></a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="submenuparent submenu-open">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <span class="title">精准教育</span>
+                            <i class="glyphicon icon-menu pull-right"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class=""><a href="yd-exchange.html">营运中心</a></li>
+                        </ul>
+                    </li> 
+                    <li class="submenuparent submenu-open">
+                        <a href="ct-img.html">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <span class="title">错题拍拍相片管理</span>
+                            <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                        </a>
+                        
+                    </li> 
+                     <li class="submenuparent submenu-open">
+                        <a href="app-adv.html">
+                            <span class="glyphicon glyphicon-book"></span>
+                            <span class="title">app广告</span>
+                            <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                        </a>
+                        
+                    </li> 
+                </ul>
+            </div>
+    <!--  end  sidebar -->
+
+    <!-- start mainer -->
+    <div class="mainer">
+      <div class="mainer-head">
+        <ul class="breadcrumb">
+         <li><span class="glyphicon glyphicon-book"></span><span>精准教育</span></li>
+         <li><span class="slidebarname">营运中心</span></li>
+         <li>导入题库类型</li>
+       </ul>
+     </div>
+
+     <div class="page-content page-math">
+      <!-- 选项列表 -->
+      <div class="search-bar">
+        <div class="edu-group">
+          <a href="#" class="btn btn-sm btn-info pull-left">
+              <i class="glyphicon glyphicon-share-alt"></i> 
+              返回
+          </a>
+        </div>
+
+        <div class="edu-group">
+          <form class="form-inline" role="form">
+            <!-- <div class="form-group">
+              <label class="sr-only" for="name">名称</label>
+              <input type="text" class="form-control" id="name" 
+                   placeholder="请输入名称">
+            </div> -->
+            <div class="form-group">
+              <label class="sr-only" for="inputfile">文件输入</label>
+              <input type="file" id="inputfile">
+            </div>
+            <!-- <div class="checkbox">
+              <label>
+                <input type="checkbox"> 请打勾
+              </label>
+            </div> -->
+            <button type="submit" class="btn btn-default">提交</button>
+          </form>
+
+        </div>
+      </div>
+      <!-- 内容列表 -->
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+<!--  end  mainer -->
+
+<!-- start footer -->
+<!-- <footer class="footer">
+     <div class="copyright">
+         <script src="http://www.k12china.com/common/ydfooter/ydfooter.js"></script>
+     </div>
+ </footer>
+ -->
+<!--  end  footer -->
+</div>
+
+
+
+<script src="../js/yd-exchage.js"></script>
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

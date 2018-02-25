@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大小学云营运中心</title>
+    <!-- css、js -->
+        <!-- necessary css -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/zTreeStyle/zTreeStyle.css">
+        <link rel="stylesheet" href="../css/page-math.css">
+        <link rel="stylesheet" href="../css/app-adv2.css">
+    	
+        <!-- JavaScript -->
+        <script src="../js/lib/jquery.min.js"></script>
+        <script src="../js/lib/bootstrap.min.js"></script>
+        <script src="../js/lib/jquery.ztree.all-3.5.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/zTreeDemo.js"></script>
+        <script src="../js/page-math.js"></script>
+        <script src="../js/app-adv2.js"></script>
+</head>
+<body class="ctxx-img" style="min-width: auto;">
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <!-- <span class="navbar-brand"></span> -->
+                    <h4>精准教育管理后台</h4>
+                    
+                </div>
+                
+                <ul class="nav navbar-nav pull-right user-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle userbutton" data-toggle="dropdown">
+                            <!-- <img src="../img/stc-user.png" alt=""> -->
+                            Dragon 
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </a>
+                        <ul class="dropdown-menu usermenu">
+                            <!-- <li class="user-head">
+                                <div class="media clearfix">
+                                    <span class="photo pull-left"><img src="img/teacher2.png" class="img-circle" alt=""></span>
+                                    
+                                    <div class="media-body">                                
+                                        <h4 class="media-heading">周小填</h4>
+                                        <h6>广东省广州市番禺区远大学校 <span class="label label-danger">数学老师</span></h6>
+                                        <span class="label label-info">一年级5班</span>
+                                        <span class="label label-info">三年级2班</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i> 个人信息
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-log-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                        <div class="clearfix"></div>
+                    </nav>
+                </header>
+
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+                <div class="sidebar">
+                    <div class="sidebar-opt">
+                        <div class="menu-setting">
+                            <span class="btn-openall"><i class="glyphicon glyphicon-unchecked"></i> 展开所有菜单</span>
+                        </div>
+                        <a href="#" class="toggle-sidebar"><i class="glyphicon glyphicon-menu-left"></i></a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="submenuparent submenu-open">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">精准教育</span>
+                                <i class="glyphicon icon-menu pull-right"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li class=""><a href="yd-exchange.html">营运中心</a></li>
+                            </ul>
+                        </li> 
+                        <li class="submenuparent submenu-open">
+                            <a href="ct-img.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">错题拍拍相片管理</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                         <li class="submenuparent submenu-open">
+                            <a href="app-adv.html">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="title">app广告</span>
+                                <!-- <i class="glyphicon icon-menu pull-right"></i> -->
+                            </a>
+                            
+                        </li> 
+                    </ul>
+                </div>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="mainer-head">
+                <ul class="breadcrumb">
+                   <li><span class="glyphicon glyphicon-book"></span><span>精准教育</span></li>
+                   <li><span class="slidebarname">营运中心</span></li>
+                   <li><span class="slidebarname">错题拍拍相片管理</span></li>
+                </ul>
+            </div>
+
+            <div class="page-content page-math">
+                <!-- 选项列表 -->
+                <div class="search-bar">
+                    <div class="edu-group">
+                        <div class="edu-text">学生账号：</div>
+                        <div class="edu-select scope-input">
+                          <input class="form-control" type="text" value="0"> 
+                        </div>
+
+                        <button class="btn btn-primary">搜索</button>
+                        
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">上传时间：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">---</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <button class="btn btn-success">全选</button>
+                        <button class="btn btn-warning">删除</button>
+                    </div>
+                </div>
+                <!-- 内容列表 -->
+                <div class="row img-sub">
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-row-12 text-center">
+                  <ul class="pagination page-list">
+                      <li><a href="#">首页</a></li>
+                      <li><a href="#">&lt;</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">&gt;</a></li>
+                      <li><a href="#">尾页</a></li>
+
+                      <span class="page-sum">共5页</span>
+                      <input type="text" class="form-control">
+                      <a href="javascript:;" class="btn btn-default btn-sm"> 跳转</a>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <script src="http://www.k12china.com/common/ydfooter/ydfooter.js"></script>
+            </div>
+        </footer>
+
+        <!--  end  footer -->
+    </div>
+
+    <div class="modal fade" id="sendMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              &nbsp;
+            </h4>
+          </div>
+          <div class="modal-body">
+            <h4>已成功发送两条微信信息</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+              确定
+            </button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+   
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

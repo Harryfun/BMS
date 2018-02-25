@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大小学云营运中心</title>
+    <!-- css、js -->
+    <include src="mdl/cssJs.html"></include>
+</head>
+<body class="ctxx-img" style="min-width: auto;">
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <!-- start header -->
+        <include src="mdl/header.html"></include>
+        <!--  end  header -->
+
+        <!-- start sidebar -->
+        <include src="mdl/sidebar.html"></include>
+        <!--  end  sidebar -->
+
+        <!-- start mainer -->
+        <div class="mainer">
+            <div class="mainer-head">
+                <ul class="breadcrumb">
+                   <li><span class="glyphicon glyphicon-book"></span><span>精准教育</span></li>
+                   <li><span class="slidebarname">营运中心</span></li>
+                   <li><span class="slidebarname">错题拍拍相片管理</span></li>
+                </ul>
+            </div>
+
+            <div class="page-content page-math">
+                <!-- 选项列表 -->
+                <div class="search-bar">
+                    <div class="edu-group">
+                        <div class="edu-text">学生账号：</div>
+                        <div class="edu-select scope-input">
+                          <input class="form-control" type="text" value="0"> 
+                        </div>
+
+                        <button class="btn btn-primary">搜索</button>
+                        
+                    </div>
+                    <div class="edu-group">
+                        <div class="edu-text">上传时间：</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="edu-text">---</div>
+                        <div class="edu-select">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="edu-group">
+                        <button class="btn btn-success">全选</button>
+                        <button class="btn btn-warning">删除</button>
+                    </div>
+                </div>
+                <!-- 内容列表 -->
+                <div class="row img-sub">
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 img-list">
+                        <img class="img-rounded" src="../img/teacher1.png" alt="">
+                        <div class="manager clearfix">
+                            <input class="img-check" type="checkbox" selected>
+                            <button class="btn btn-sm pull-right btn-warning">删除</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <include src="mdl/page_list.html"></include>
+            </div>
+        </div>
+        <!--  end  mainer -->
+
+        <!-- start footer -->
+        <include src="mdl/footer.html"></include>
+        <!--  end  footer -->
+    </div>
+
+    <div class="modal fade" id="sendMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              &nbsp;
+            </h4>
+          </div>
+          <div class="modal-body">
+            <h4>已成功发送两条微信信息</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+              确定
+            </button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+   
+</body>
+</html>
